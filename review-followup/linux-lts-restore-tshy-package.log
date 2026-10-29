@@ -1,0 +1,4 @@
+command=["docker", "exec", "-w", "/work/lts/source", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "python3", "/work/evidence0820/restore_package.py"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+{"file": "/work/lts/source/package.json", "prebuildSHA256": "f656353ccd5bd7cda4357871bc4893828fee34e4d5f584fe7d502dc90543c088", "generatedSHA256": "9c2c3fadb972e54f0d1836b748ab3e2bba43e061a61cdff1c946a72019a2762e", "changedTopLevelFields": [], "restoredOnlyThisFile": true, "restoredSHA256": "f656353ccd5bd7cda4357871bc4893828fee34e4d5f584fe7d502dc90543c088"}

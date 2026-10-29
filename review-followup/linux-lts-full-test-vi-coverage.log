@@ -1,0 +1,61 @@
+command=["docker", "exec", "-w", "/work/lts/source", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "test:vi", "--", "--coverage"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> cheerio@1.2.0 test:vi
+> vitest run --coverage
+
+[33mTesting types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.[39m
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/work/lts/source[39m
+      [2mCoverage enabled with [22m[33mv8[39m
+
+ [32m✓[39m src/index.spec.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 87[2mms[22m[39m
+ [32m✓[39m src/api/manipulation.spec.ts [2m([22m[2m204 tests[22m[2m)[22m[32m 113[2mms[22m[39m
+ [32m✓[39m src/api/traversing.spec.ts [2m([22m[2m258 tests[22m[2m)[22m[32m 175[2mms[22m[39m
+ [32m✓[39m src/cheerio.spec.ts [2m([22m[2m50 tests[22m[2m)[22m[32m 35[2mms[22m[39m
+ [32m✓[39m src/api/forms.spec.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 36[2mms[22m[39m
+ [32m✓[39m src/api/attributes.spec.ts [2m([22m[2m169 tests[22m[2m)[22m[32m 128[2mms[22m[39m
+ [32m✓[39m src/api/extract.spec.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+ [32m✓[39m src/static.spec.ts [2m([22m[2m40 tests[22m[2m)[22m[32m 24[2mms[22m[39m
+ [32m✓[39m src/__tests__/deprecated.spec.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32m✓[39m src/api/css.spec.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32m✓[39m src/parse.spec.ts [2m([22m[2m35 tests[22m[2m)[22m[32m 19[2mms[22m[39m
+ [32m✓[39m src/load.spec.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m src/utils.spec.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/xml.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m [44m[1m TS [22m[49m src/api/extract.spec.ts [2m([22m[2m14 tests[22m[2m)[22m
+
+[2m Test Files [22m [1m[32m15 passed[39m[22m[90m (15)[39m
+[2m      Tests [22m [1m[32m869 passed[39m[22m[90m (869)[39m
+[2mType Errors [22m [2mno errors[22m
+[2m   Start at [22m 08:25:33
+[2m   Duration [22m 1.96s[2m (typecheck 28%, import 27%, tests 24%, transform 15%, worker 5%)[22m
+
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   98.59 |    96.38 |     100 |   99.33 |                   
+ src               |   98.03 |    92.17 |     100 |   98.42 |                   
+  cheerio.ts       |     100 |      100 |     100 |     100 |                   
+  index.ts         |      98 |    75.75 |     100 |   97.91 | 88                
+  load-parse.ts    |     100 |      100 |     100 |     100 |                   
+  load.ts          |   93.75 |    91.48 |     100 |   96.66 | 233               
+  options.ts       |     100 |      100 |     100 |     100 |                   
+  parse.ts         |     100 |      100 |     100 |     100 |                   
+  static.ts        |     100 |      100 |     100 |     100 |                   
+  utils.ts         |   94.11 |    83.33 |     100 |    92.3 | 87                
+ src/__fixtures__  |     100 |      100 |     100 |     100 |                   
+  fixtures.ts      |     100 |      100 |     100 |     100 |                   
+ src/api           |   98.67 |    97.78 |     100 |   99.55 |                   
+  attributes.ts    |    97.5 |    97.17 |     100 |   99.17 | 113,308           
+  css.ts           |   97.91 |    97.72 |     100 |     100 | 155               
+  extract.ts       |     100 |      100 |     100 |     100 |                   
+  forms.ts         |   95.23 |       90 |     100 |     100 | 86                
+  manipulation.ts  |   99.52 |    98.33 |     100 |   99.48 | 59                
+  traversing.ts    |     100 |    99.13 |     100 |     100 | 221               
+ src/parsers       |     100 |     87.5 |     100 |     100 |                   
+  ...e5-adapter.ts |     100 |     87.5 |     100 |     100 | 51                
+-------------------|---------|----------|---------|---------|-------------------

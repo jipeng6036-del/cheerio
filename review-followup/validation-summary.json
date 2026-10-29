@@ -1,0 +1,85 @@
+{
+  "atUtc": "2026-10-29T08:39:47.895094+00:00",
+  "pullRequest": "https://github.com/cheeriojs/cheerio/pull/5696",
+  "sourceCommit": "e9471f504c86b1b57aafc06426b57329f544e464",
+  "sourceTree": "f7c1b301a0baf27309ab28276ae36b62eee72fe2",
+  "parentCommit": "770847685e943c195cf6c4a6fe9aab1748f9b1b8",
+  "sourceArchiveSHA256": "0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81",
+  "reviewDisposition": [
+    {
+      "commentID": 4410011966,
+      "result": "Fixed invalid caller URL discarding a valid absolute head base; retain fallback-first parsing, then parse that same selected href alone."
+    },
+    {
+      "commentID": 4410011987,
+      "result": "Document invalid/data/javascript first-base fallback and no later-base retry."
+    },
+    {
+      "commentID": 4410019234,
+      "result": "Confirmed real nonblocking repeated-head-scan performance concern. No DOM-invalidation cache in this scoped fix; original performance fixture had head size0/1 only and does not rule out large-head cost."
+    }
+  ],
+  "publicRuntime": {
+    "cases": 204,
+    "before": {
+      "passed": 128,
+      "failed": 76
+    },
+    "candidate": {
+      "passed": 204,
+      "failed": 0
+    },
+    "sameCaseNamesAndExpectations": true,
+    "beforeExit0OnlyMeansResultsRecorded": true,
+    "genuineExtractCalls": "The explicit extract-absolute-head assertions and installed consumers invoke .extract; a control whose name contains extract-invalid-caller invokes .prop and is not claimed as an additional extract assertion."
+  },
+  "Windows": {
+    "node": "24.22.1",
+    "testFiles": 15,
+    "tests": 869,
+    "typeErrors": 0,
+    "packInstalledCJSandESM": "PASS: actual fixture disk reads, load/loadBuffer/prop/extract, invalid caller variants and real loopback HTTP302/fromURL; servers closed."
+  },
+  "Linux": {
+    "nodeVersions": [
+      "22.23.4",
+      "24.22.2",
+      "26.13.0"
+    ],
+    "testsPerVersion": 869,
+    "testFiles": 15,
+    "typeErrors": 0,
+    "LTScoverageAndRootBuild": "PASS",
+    "websiteBuildAndCheck": "PASS",
+    "fullESLintTSCBiome": "PASS",
+    "sourceFilesBoundToSnapshot": 125,
+    "privateDeliverySHA256": "9a32b1bd795b90b66bd239f118293c58cc14f619951ee45ff5797c760dc36614",
+    "diagnostics": "Required commands exit0; nonblocking build/lint diagnostics retained in logs, not reported as zero warnings."
+  },
+  "realPrecommitHook": "PASS with HUSKY=1; all125committed blobs and modes equal tested snapshot.",
+  "limits": [
+    "Direct children of HTML head only; XML ignores document base elements. No full browser conformance claim.",
+    "Invalid caller URL is a Cheerio configuration degradation case; no native browser document with an invalid document URL is claimed.",
+    "Upstream Actions require maintainer approval. Local results are separate from hosted CI, human review and merge."
+  ],
+  "derivations": [
+    {
+      "file": "runtime-before.json",
+      "rawSHA256": "223fe6b6b3403a0b210ceb25cebe2df344f484b49d4554a6e8b182d11fa599b6",
+      "publicSHA256": "3e8b5a5c30ef2017432d6fe2da8d80096aebe554b3a0f2ba1724d5f763375d42",
+      "changes": "Only source path/method metadata corrected and exact sourceBinding added; all case inputs, expected/actual outputs, errors, counts and timestamps unchanged."
+    },
+    {
+      "file": "runtime-candidate.json",
+      "rawSHA256": "dc0402c6c66a057c2235c9d6de9db5fc27cbe3ca25f6369bd386a3b316936aaa",
+      "publicSHA256": "f9408e16ff331a84926ef49934d3920a8ed9c52c763f78c923d017ef12c2fc7a",
+      "changes": "Only source path/method metadata corrected and exact sourceBinding added; all case inputs, expected/actual outputs, errors, counts and timestamps unchanged."
+    },
+    {
+      "file": "public-runtime-proof.mts",
+      "rawSHA256": "99b7b88609ebb05a7bf31686d3b444325823a8d98c9c4f61e30b86744cae315a",
+      "publicSHA256": "6f638956e6be4bbf6e9ebe2d5657beb39839bc8e014f717e7d93e1222c3d02bc",
+      "changes": "Only report.method wording corrected; executable test and assertion logic unchanged."
+    }
+  ]
+}

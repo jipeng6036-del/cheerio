@@ -1,0 +1,16 @@
+command=["docker", "exec", "-w", "/work/lts/source/website", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "check"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> @cheerio/website@0.0.0 check
+> astro check
+
+[2m08:25:50[22m [34m[content][39m Syncing content
+[2m08:25:50[22m [34m[content][39m Synced content
+[2m08:25:50[22m [34m[types][39m Generated [2m361ms[22m
+[2m08:25:50[22m [34m[check][39m Getting diagnostics for Astro files in /work/lts/source/website...
+Result (39 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

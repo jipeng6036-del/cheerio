@@ -1,0 +1,30 @@
+{
+  "osRelease": "PRETTY_NAME=\"Debian GNU/Linux 12 (bookworm)\"\nNAME=\"Debian GNU/Linux\"\nVERSION_ID=\"12\"\nVERSION=\"12 (bookworm)\"\nVERSION_CODENAME=bookworm\nID=debian\nHOME_URL=\"https://www.debian.org/\"\nSUPPORT_URL=\"https://www.debian.org/support\"\nBUG_REPORT_URL=\"https://bugs.debian.org/\"\n",
+  "uname": "Linux 192082d4f296 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 GNU/Linux\n",
+  "runtimes": {
+    "node22": {
+      "node": "v22.23.4",
+      "arch": "x64",
+      "platform": "linux",
+      "execPath": "/work/runtimes/node-v22.23.4-linux-x64/bin/node",
+      "parallelism": 4,
+      "npm": "10.9.9"
+    },
+    "node24": {
+      "node": "v24.22.2",
+      "arch": "x64",
+      "platform": "linux",
+      "execPath": "/work/runtimes/node-v24.22.2-linux-x64/bin/node",
+      "parallelism": 4,
+      "npm": "11.19.1"
+    },
+    "lts": {
+      "node": "v26.13.0",
+      "arch": "x64",
+      "platform": "linux",
+      "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node",
+      "parallelism": 4,
+      "npm": "11.20.0"
+    }
+  }
+}

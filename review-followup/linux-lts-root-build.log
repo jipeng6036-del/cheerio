@@ -1,0 +1,7 @@
+command=["docker", "exec", "-w", "/work/lts/source", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "build"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> cheerio@1.2.0 build
+> tshy
+

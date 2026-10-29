@@ -1,0 +1,1304 @@
+{
+  "atUtc": "2026-10-29T08:20:39.958Z",
+  "label": "candidate",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "source": "<source-checkout>/src/index.ts",
+  "sourceSHA256": "e787af464e3f7909c169857f53f8212bedfe22cf1315236c2f352b880d99f143",
+  "method": "Actual exported load/loadBuffer and extract plus public DOM mutation; before and candidate executed sequentially in the same checkout, each bound to its own exact125-file source snapshot. No helper direct calls, mocks, network or model services.",
+  "cases": 204,
+  "passed": 204,
+  "failed": 0,
+  "results": [
+    {
+      "name": "load/a.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/a.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/a.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/a.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/a.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/a.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/extract-absolute-head/no-caller",
+      "pass": true,
+      "expected": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      },
+      "actual": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      }
+    },
+    {
+      "name": "load/extract-absolute-head/invalid-caller",
+      "pass": true,
+      "expected": {
+        "link": "https://cdn.example/assets/item"
+      },
+      "actual": {
+        "link": "https://cdn.example/assets/item"
+      }
+    },
+    {
+      "name": "load/no-head-base",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/invalid-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/data-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/javascript-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/same-scheme-with-valid-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "load/extract-invalid-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "load/relative-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/invalid-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/data-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/javascript-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-base-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "load/target-only-base",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "load/invalid-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/empty-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/data-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/opaque-base-relative-link",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/opaque-base-with-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/template-only",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/template-before-real-base",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "load/base-own-href",
+      "pass": true,
+      "expected": "https://document.example/root/own/",
+      "actual": "https://document.example/root/own/"
+    },
+    {
+      "name": "load/xml-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/xml-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/unsupported-attribute-element",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/invalid-attribute-with-caller",
+      "pass": true,
+      "expected": "http://[",
+      "actual": "http://["
+    },
+    {
+      "name": "load/invalid-caller-contract-control",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/dom-mutation",
+      "pass": true,
+      "expected": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ],
+      "actual": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ]
+    },
+    {
+      "name": "loadBuffer/a.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/a.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/a.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/a.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/a.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/a.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/absent",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/empty",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/invalid-host",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/invalid-text",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/relative-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/extract-absolute-head/no-caller",
+      "pass": true,
+      "expected": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      },
+      "actual": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      }
+    },
+    {
+      "name": "loadBuffer/extract-absolute-head/invalid-caller",
+      "pass": true,
+      "expected": {
+        "link": "https://cdn.example/assets/item"
+      },
+      "actual": {
+        "link": "https://cdn.example/assets/item"
+      }
+    },
+    {
+      "name": "loadBuffer/no-head-base",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/invalid-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/data-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/javascript-first-invalid-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/same-scheme-with-valid-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "loadBuffer/extract-invalid-caller",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "loadBuffer/relative-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/invalid-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/data-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/javascript-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-base-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "loadBuffer/target-only-base",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "loadBuffer/invalid-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/empty-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/data-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/opaque-base-relative-link",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/opaque-base-with-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/template-only",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/template-before-real-base",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item",
+      "actual": "https://cdn.example/assets/item"
+    },
+    {
+      "name": "loadBuffer/base-own-href",
+      "pass": true,
+      "expected": "https://document.example/root/own/",
+      "actual": "https://document.example/root/own/"
+    },
+    {
+      "name": "loadBuffer/xml-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/xml-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/unsupported-attribute-element",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/invalid-attribute-with-caller",
+      "pass": true,
+      "expected": "http://[",
+      "actual": "http://["
+    },
+    {
+      "name": "loadBuffer/invalid-caller-contract-control",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/dom-mutation",
+      "pass": true,
+      "expected": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ],
+      "actual": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ]
+    }
+  ],
+  "knownBoundaries": [
+    {
+      "html": "<head></head><body><base href=\"https://body.example/\"><a href=\"item\">x</a></body>",
+      "actual": "https://document.example/root/item",
+      "scope": "Body/nested base lookup is outside this scoped direct-head implementation; not asserted as complete browser parity."
+    },
+    {
+      "html": "<head></head><body><section><base href=\"https://body.example/\"></section><a href=\"item\">x</a></body>",
+      "actual": "https://document.example/root/item",
+      "scope": "Body/nested base lookup is outside this scoped direct-head implementation; not asserted as complete browser parity."
+    }
+  ],
+  "sourceBinding": {
+    "commit": "e9471f504c86b1b57aafc06426b57329f544e464",
+    "archiveSHA256": "0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81",
+    "sourceFiles": 125,
+    "scope": "Temporal same-path isolation, not different checkout paths."
+  }
+}

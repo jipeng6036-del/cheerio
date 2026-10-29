@@ -1,0 +1,62 @@
+command=["docker", "exec", "-w", "/work/lts/source", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "lint"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> cheerio@1.2.0 lint
+> npm run lint:es && npm run lint:ts && npm run lint:biome
+
+
+> cheerio@1.2.0 lint:es
+> eslint .
+
+
+> cheerio@1.2.0 lint:ts
+> tsc --noEmit
+
+
+> cheerio@1.2.0 lint:biome
+> biome check .
+
+biome.json:2:14 deserialize ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i The configuration schema version does not match the CLI version 2.5.15
+  
+    1 │ {
+  > 2 │   "$schema": "https://biomejs.dev/schemas/2.5.7/schema.json",
+      │              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    3 │   "vcs": {
+    4 │     "enabled": true,
+  
+  i   Expected:                     2.5.15
+      Found:                        2.5.7
+  
+  
+  i Run the command biome migrate to migrate the configuration file.
+  
+
+website/src/styles/global.css:414:1 lint/style/noDescendingSpecificity ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Descending specificity selector found. This selector specificity is (0, 1, 1)
+  
+    412 │ }
+    413 │ 
+  > 414 │ .admonition code {
+        │ ^^^^^^^^^^^^^^^^
+    415 │   background-color: rgba(0, 0, 0, 0.1);
+    416 │ }
+  
+  i This selector specificity is (0, 1, 2)
+  
+    252 │ }
+    253 │ 
+  > 254 │ .prose pre code {
+        │ ^^^^^^^^^^^^^^^
+    255 │   background-color: transparent;
+    256 │   padding: 0;
+  
+  i Descending specificity selector may not be applied. Consider rearranging the order of the selectors. See MDN web docs for more details.
+  
+
+Checked 83 files in 69ms. No fixes applied.
+Found 1 warning.
+Found 1 info.

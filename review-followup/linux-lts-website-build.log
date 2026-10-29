@@ -1,0 +1,115 @@
+command=["docker", "exec", "-w", "/work/lts/source/website", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v26.13.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "build"]
+node={"node": "v26.13.0", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v26.13.0-linux-x64/bin/node", "parallelism": 4, "npm": "11.20.0"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> @cheerio/website@0.0.0 build
+> npm run build:api && astro build
+
+
+> @cheerio/website@0.0.0 build:api
+> typedoc
+
+[96m[info][0m Loaded plugin typedoc-plugin-markdown
+[96m[info][0m Loaded plugin typedoc-plugin-mdn-links
+[96m/work/lts/source/src/api/attributes.ts[0m:[93m430[0m:[93m17[0m - [93m[warning][0m The first line of an example tag will be taken literally as the example name, and should only contain text
+
+[47m[30m430[0m     * @example With `baseURI` set to `'https://example.com'`:
+
+[96m/work/lts/source/src/api/manipulation.ts[0m:[93m516[0m:[93m43[0m - [93m[warning][0m The first line of an example tag will be taken literally as the example name, and should only contain text
+
+[47m[30m516[0m     * @example <caption>With markup passed to `wrapAll`</caption>
+
+[96m/work/lts/source/src/static.ts[0m:[93m146[0m:[93m3[0m - [93m[warning][0m Encountered an unknown block tag @alias
+
+[47m[30m146[0m     * @alias Cheerio.parseHTML
+
+[96m/work/lts/source/src/static.ts[0m:[93m198[0m:[93m3[0m - [93m[warning][0m Encountered an unknown block tag @alias
+
+[47m[30m198[0m     * @alias Cheerio.root
+
+[96m/work/lts/source/src/static.ts[0m:[93m212[0m:[93m3[0m - [93m[warning][0m Encountered an unknown block tag @alias
+
+[47m[30m212[0m     * @alias Cheerio.contains
+
+[96m/work/lts/source/src/static.ts[0m:[93m261[0m:[93m3[0m - [93m[warning][0m Encountered an unknown block tag @alias
+
+[47m[30m261[0m     * @alias Cheerio.merge
+
+[93m[warning][0m Cheerio, defined in cheerio/src/cheerio.ts, is referenced by AcceptedFilters but not included in the documentation
+[93m[warning][0m SelectorSpecial, defined in cheerio/src/types.ts, is referenced by SelectorType but not included in the documentation
+[93m[warning][0m AlphaNumeric, defined in cheerio/src/types.ts, is referenced by SelectorType but not included in the documentation
+[93m[warning][0m InternalOptions, defined in cheerio/src/options.ts, is referenced by Cheerio.options but not included in the documentation
+[93m[warning][0m UndiciStreamOptions, defined in cheerio/src/index.ts, is referenced by CheerioRequestOptions.requestOptions but not included in the documentation
+[93m[warning][0m ExtractedMap, defined in cheerio/src/api/extract.ts, is referenced by Cheerio.extract but not included in the documentation
+[93m[warning][0m StyleProp, defined in cheerio/src/api/attributes.ts, is referenced by Cheerio.prop but not included in the documentation
+[93m[warning][0m Writable, defined in cheerio/src/static.ts, is referenced by merge.arr1 but not included in the documentation
+[93m[warning][0m ExtractMap, defined in cheerio/src/api/extract.ts, is referenced by Cheerio.extract.M but not included in the documentation
+[96m[info][0m markdown generated at ./src/content/docs/api
+[93m[warning][0m Found 0 errors and 15 warnings
+[2m08:25:44[22m [34m[content][39m Syncing content
+[2m08:25:45[22m [34m[content][39m Synced content
+[2m08:25:45[22m [34m[types][39m Generated [2m1.14s[22m
+[2m08:25:45[22m [34m[build][39m output: [34m"static"[39m
+[2m08:25:45[22m [34m[build][39m mode: [34m"static"[39m
+[2m08:25:45[22m [34m[build][39m directory: [34m/work/lts/source/website/dist/[39m
+[2m08:25:45[22m [34m[build][39m Collecting build info...
+[2m08:25:45[22m [34m[build][39m [32m✓ Completed in 1.17s.[39m
+[2m08:25:45[22m [34m[build][39m Building static entrypoints...
+[2m08:25:46[22m [34m[vite][39m [32m✓ built in 651ms[39m
+[33m[1m08:25:46[22m [WARN] [vite][39m [33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[2m08:25:46[22m [34m[vite][39m [32m✓ built in 155ms[39m
+[2m08:25:46[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m08:25:46[22m   [34m├─[39m [2m/blog/rss.xml[22m [2m(+57ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/blog/cheerio-1.0/index.html[22m [2m(+6ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/blog/new-website/index.html[22m [2m(+2ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+3ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/advanced/extract/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/advanced/configuring-cheerio/index.html[22m [2m(+2ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/advanced/extending-cheerio/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/advanced/security/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/classes/cheerio/index.html[22m [2m(+2ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/contains/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/decodestream/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/fromurl/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/loadbuffer/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/merge/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/functions/stringstream/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/interfaces/cheerioapi/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/interfaces/cheeriooptions/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/interfaces/cheeriorequestoptions/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/interfaces/decodestreamoptions/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/interfaces/htmlparser2options/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/types/acceptedelems/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/types/acceptedfilters/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/types/basicacceptedelems/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/types/filterfunction/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/types/selectortype/index.html[22m [2m(+6ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/variables/load/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/extract/index.html[22m [2m(+14ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/loading/index.html[22m [2m(+2ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/manipulation/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/selecting/index.html[22m [2m(+5ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/traversing/index.html[22m [2m(+8ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/basics/troubleshooting/index.html[22m [2m(+4ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/api/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/docs/intro/index.html[22m [2m(+1ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/sponsors/index.html[22m [2m(+2ms)[22m 
+[2m08:25:46[22m   [34m├─[39m [2m/index.html[22m [31m(+1.29s)[39m 
+[2m08:25:47[22m [32m✓ Completed in 1.47s.
+[39m
+[42m[30m generating optimized images [39m[49m
+[2m08:25:47[22m [34m[vite][39m [32m✓ built in 11ms[39m
+[2m08:25:47[22m   [32m▶[39m /_astro/orange-c.C2HK-Zjb_SMe1d.svg [2m(before: 1kB, after: 1kB)[22m [2m(+32ms)[22m [2m(1/2)[22m
+[2m08:25:48[22m   [32m▶[39m /_astro/logo_Z1ffHUn.webp [2m(before: 5kB, after: 0kB)[22m [2m(+1.10s)[22m [2m(2/2)[22m
+[2m08:25:48[22m [32m✓ Completed in 1.10s.
+[39m
+[2m08:25:48[22m [34m[build][39m [32m✓ Completed in 3.41s.[39m
+[2m08:25:48[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m08:25:48[22m [34m[build][39m 34 page(s) built in [1m4.59s[22m
+[2m08:25:48[22m [34m[build][39m [1mComplete![22m

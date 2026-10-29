@@ -1,0 +1,37 @@
+command=["docker", "exec", "-w", "/work/node22/source", "ghpr-run0745-cheerio-linux-matrix", "env", "PATH=/work/runtimes/node-v22.23.4-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "CI=1", "npm_config_cache=/work/npm-cache", "FORCE_COLOR=0", "npm", "run", "test:vi"]
+node={"node": "v22.23.4", "arch": "x64", "platform": "linux", "execPath": "/work/runtimes/node-v22.23.4-linux-x64/bin/node", "parallelism": 4, "npm": "10.9.9"}
+sourceArchiveSHA256=0a436fd4529c77b647f486a20f756e5b4c4a46e416929464c3cf344065664c81
+
+> cheerio@1.2.0 test:vi
+> vitest run
+
+[33mTesting types with tsc and vue-tsc is an experimental feature.
+Breaking changes might not follow SemVer, please pin Vitest's version when using it.[39m
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.5 [39m[90m/work/node22/source[39m
+
+ [32m✓[39m src/api/manipulation.spec.ts [2m([22m[2m204 tests[22m[2m)[22m[33m 392[2mms[22m[39m
+ [32m✓[39m src/api/attributes.spec.ts [2m([22m[2m169 tests[22m[2m)[22m[33m 399[2mms[22m[39m
+ [32m✓[39m src/api/traversing.spec.ts [2m([22m[2m258 tests[22m[2m)[22m[33m 557[2mms[22m[39m
+ [32m✓[39m src/parse.spec.ts [2m([22m[2m35 tests[22m[2m)[22m[32m 84[2mms[22m[39m
+ [32m✓[39m src/cheerio.spec.ts [2m([22m[2m50 tests[22m[2m)[22m[32m 115[2mms[22m[39m
+ [32m✓[39m src/static.spec.ts [2m([22m[2m40 tests[22m[2m)[22m[32m 83[2mms[22m[39m
+ [32m✓[39m src/__tests__/deprecated.spec.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 93[2mms[22m[39m
+ [32m✓[39m src/api/extract.spec.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 73[2mms[22m[39m
+ [32m✓[39m src/api/css.spec.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 21[2mms[22m[39m
+ [32m✓[39m src/api/forms.spec.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 82[2mms[22m[39m
+ [32m✓[39m src/index.spec.ts [2m([22m[2m14 tests[22m[2m)[22m[33m 487[2mms[22m[39m
+ [32m✓[39m src/__tests__/xml.spec.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/utils.spec.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/load.spec.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32m✓[39m [44m[1m TS [22m[49m src/api/extract.spec.ts [2m([22m[2m14 tests[22m[2m)[22m
+
+[2m Test Files [22m [1m[32m15 passed[39m[22m[90m (15)[39m
+[2m      Tests [22m [1m[32m869 passed[39m[22m[90m (869)[39m
+[2mType Errors [22m [2mno errors[22m
+[2m   Start at [22m 08:25:20
+[2m   Duration [22m 8.05s[2m (typecheck 48%, tests 22%, import 16%, transform 13%, worker 1%)[22m
+
+[2m    Isolate [22m [33m15 workers spawned[39m[2m · ~132ms startup each (spawn + environment, per file)[22m
+[2m            [22m [2mat least ~528ms faster with [22m[33misolate: false[39m[2m — reuses workers across files instead of one per file[22m
+
