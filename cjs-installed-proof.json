@@ -1,0 +1,40 @@
+{
+  "label": "cjs",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "package": "1.2.0",
+  "checks": [
+    {
+      "loader": "load",
+      "href": "https://cdn.example/assets/one.html",
+      "src": "https://cdn.example/assets/image.png",
+      "extract": {
+        "links": [
+          "https://cdn.example/assets/one.html",
+          "https://cdn.example/assets/two.html"
+        ]
+      }
+    },
+    {
+      "loader": "loadBuffer",
+      "href": "https://cdn.example/assets/one.html",
+      "src": "https://cdn.example/assets/image.png",
+      "extract": {
+        "links": [
+          "https://cdn.example/assets/one.html",
+          "https://cdn.example/assets/two.html"
+        ]
+      }
+    },
+    {
+      "loader": "fromURL",
+      "href": "https://cdn.example/assets/one.html",
+      "requests": [
+        "/redirect",
+        "/page"
+      ]
+    }
+  ],
+  "serversClosed": true,
+  "method": "Installed npm tarball consumer; actual disk reads plus loopback HTTP redirect/HTML parser. No mocked transports or paid/external services."
+}

@@ -1,0 +1,61 @@
+{
+  "atUtc": "2026-10-29T08:05:00.682448+00:00",
+  "sourceCommit": "770847685e943c195cf6c4a6fe9aab1748f9b1b8",
+  "sourceTree": "0f19bd053fd3fb033cf0ca44a703358476508e43",
+  "upstreamCommit": "84fd02e80edf9ca4d9f66f042868cd3571fac19e",
+  "originalPR": "https://github.com/cheeriojs/cheerio/pull/5385",
+  "originalPRHead": "df1d662b2e5c0dfb957fa18eb54cce1bee4e4295",
+  "reusedCommits": [
+    {
+      "author": "Vojta Holes",
+      "source": "b23fb5b926f22a285d1b5bbac66e7587adddc828",
+      "applied": "830aebb0b5b730f7b7a4bfe01d5505fac12e8305"
+    },
+    {
+      "author": "Vojta Holes",
+      "source": "4d512127354ae2383a1addadd009c17374037c96",
+      "applied": "aedcc2b9f8193047ab5c5335fe111ce71eb177f0"
+    }
+  ],
+  "Linux": {
+    "os": "Debian12 amd64",
+    "nodeVersions": [
+      "22.23.4",
+      "24.22.2",
+      "26.13.0"
+    ],
+    "testsPerVersion": 861,
+    "testFilesPerVersion": 15,
+    "typeErrors": 0,
+    "LTS26Coverage": {
+      "statements": "977/991",
+      "branches": "747/775",
+      "functions": "193/193",
+      "lines": "893/899"
+    },
+    "rootBuild": true,
+    "websiteBuild": true,
+    "websiteCheck": "39files:0errors/0warnings/0hints",
+    "fullESLintTSCBiome": true,
+    "sourceFilesBoundToFinalCommit": 125,
+    "localRawDeliverySHA256": "bef826d6fb2f3604cc774f95cae9723f56801c3e234ca6c251c77e2d2d9f10f5"
+  },
+  "Windows": {
+    "node": "24.22.1",
+    "fullTests": 861,
+    "typeErrors": 0,
+    "publicSDKCases": 118,
+    "baselinePassed": 28,
+    "originalPatchPassed": 56,
+    "candidatePassed": 118,
+    "installedTarballESMandCJS": "actual disk load/loadBuffer/extract and loopback HTTP302/fromURL, both PASS",
+    "realGitPrecommitHook": "PASS, no HUSKY bypass"
+  },
+  "limits": [
+    "Direct children of HTML head only; body/nested base elements are outside this implementation.",
+    "No complete browser-conformance claim. XML ignores the base element for document resolution.",
+    "GitHub-hosted CI and maintainer review are separate and were not pre-PR results."
+  ],
+  "reproduction": "Run the portable public-runtime-proof.mts against source directories of the three named commits after npm ci; build+pack the candidate and use the two installed-consumer files from a clean npm tarball consumer.",
+  "nonblockingDiagnostics": "Website build emitted Typedoc warnings and chunk-size advice; full Biome emitted one warning and one info. Required commands exited0; website check itself reported zero diagnostics."
+}

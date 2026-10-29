@@ -1,0 +1,759 @@
+{
+  "atUtc": "2026-10-29T07:46:28.645Z",
+  "label": "original",
+  "node": "v24.22.1",
+  "platform": "win32",
+  "source": "public-proof-sources/original/src/index.ts",
+  "sourceSHA256": "e787af464e3f7909c169857f53f8212bedfe22cf1315236c2f352b880d99f143",
+  "method": "Actual exported load/loadBuffer and extract plus public DOM mutation; filesystem source paths isolated per baseline/original/candidate; no helper direct calls, network or model services.",
+  "cases": 118,
+  "passed": 56,
+  "failed": 62,
+  "results": [
+    {
+      "name": "load/a.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/a.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/a.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/area.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/area.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/area.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/link.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/link.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/link.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/audio.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/audio.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/audio.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/embed.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/embed.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/embed.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/iframe.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/iframe.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/iframe.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/img.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/img.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/img.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/input.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/input.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/input.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/script.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/script.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/script.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/source.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/source.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/source.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/track.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/track.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/track.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/video.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/video.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "load/video.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "load/extract-absolute-head/no-caller",
+      "pass": false,
+      "expected": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      },
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   image: 'picture.png',\n-   image: 'https://cdn.example/assets/picture.png',\n    links: [\n+     'first',\n+     'second'\n-     'https://cdn.example/assets/first',\n-     'https://cdn.example/assets/second'\n    ]\n  }\n"
+    },
+    {
+      "name": "load/no-head-base",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/invalid-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/data-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/javascript-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-base-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "load/target-only-base",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item'\n- 'https://cdn.example/assets/item'\n"
+    },
+    {
+      "name": "load/invalid-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/relative-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/empty-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/data-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/opaque-base-relative-link",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/opaque-base-with-caller",
+      "pass": false,
+      "expected": "item",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "load/template-only",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/template-before-real-base",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item'\n- 'https://cdn.example/assets/item'\n"
+    },
+    {
+      "name": "load/base-own-href",
+      "pass": true,
+      "expected": "https://document.example/root/own/",
+      "actual": "https://document.example/root/own/"
+    },
+    {
+      "name": "load/xml-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/xml-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "load/unsupported-attribute-element",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "load/invalid-attribute-with-caller",
+      "pass": false,
+      "expected": "http://[",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "load/invalid-caller-contract-control",
+      "pass": false,
+      "expected": "item",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "load/dom-mutation",
+      "pass": false,
+      "expected": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ],
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n-   'https://cdn.example/assets/item',\n-   'https://changed.example/item',\n    'item',\n+   'item',\n+   'item'\n  ]\n"
+    },
+    {
+      "name": "loadBuffer/a.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/a.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/a.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/area.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/area.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/area.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/link.href/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/link.href/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/link.href/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/audio.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/audio.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/audio.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/embed.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/embed.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/embed.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/iframe.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/iframe.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/iframe.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/img.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/img.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/img.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/input.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/input.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/input.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/script.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/script.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/script.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/source.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/source.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/source.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/track.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/track.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/track.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/video.src/absent",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/video.src/empty",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item.bin",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item.bin'\n- 'https://cdn.example/assets/item.bin'\n"
+    },
+    {
+      "name": "loadBuffer/video.src/present",
+      "pass": true,
+      "expected": "https://cdn.example/assets/item.bin",
+      "actual": "https://cdn.example/assets/item.bin"
+    },
+    {
+      "name": "loadBuffer/extract-absolute-head/no-caller",
+      "pass": false,
+      "expected": {
+        "links": [
+          "https://cdn.example/assets/first",
+          "https://cdn.example/assets/second"
+        ],
+        "image": "https://cdn.example/assets/picture.png"
+      },
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   image: 'picture.png',\n-   image: 'https://cdn.example/assets/picture.png',\n    links: [\n+     'first',\n+     'second'\n-     'https://cdn.example/assets/first',\n-     'https://cdn.example/assets/second'\n    ]\n  }\n"
+    },
+    {
+      "name": "loadBuffer/no-head-base",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/invalid-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/data-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/javascript-base-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-base-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/sub/item",
+      "actual": "https://document.example/root/sub/item"
+    },
+    {
+      "name": "loadBuffer/target-only-base",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item'\n- 'https://cdn.example/assets/item'\n"
+    },
+    {
+      "name": "loadBuffer/invalid-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/relative-first-not-second",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/empty-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/data-first-not-second",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/opaque-base-relative-link",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/opaque-base-with-caller",
+      "pass": false,
+      "expected": "item",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "loadBuffer/template-only",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/template-before-real-base",
+      "pass": false,
+      "expected": "https://cdn.example/assets/item",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ 'item'\n- 'https://cdn.example/assets/item'\n"
+    },
+    {
+      "name": "loadBuffer/base-own-href",
+      "pass": true,
+      "expected": "https://document.example/root/own/",
+      "actual": "https://document.example/root/own/"
+    },
+    {
+      "name": "loadBuffer/xml-no-caller",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/xml-with-caller",
+      "pass": true,
+      "expected": "https://document.example/root/item",
+      "actual": "https://document.example/root/item"
+    },
+    {
+      "name": "loadBuffer/unsupported-attribute-element",
+      "pass": true,
+      "expected": "item",
+      "actual": "item"
+    },
+    {
+      "name": "loadBuffer/invalid-attribute-with-caller",
+      "pass": false,
+      "expected": "http://[",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "loadBuffer/invalid-caller-contract-control",
+      "pass": false,
+      "expected": "item",
+      "error": "TypeError: Invalid URL"
+    },
+    {
+      "name": "loadBuffer/dom-mutation",
+      "pass": false,
+      "expected": [
+        "https://cdn.example/assets/item",
+        "https://changed.example/item",
+        "item"
+      ],
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n-   'https://cdn.example/assets/item',\n-   'https://changed.example/item',\n    'item',\n+   'item',\n+   'item'\n  ]\n"
+    }
+  ],
+  "knownBoundaries": [
+    {
+      "html": "<head></head><body><base href=\"https://body.example/\"><a href=\"item\">x</a></body>",
+      "actual": "https://document.example/root/item",
+      "scope": "Body/nested base lookup is outside this scoped direct-head implementation; not asserted as complete browser parity."
+    },
+    {
+      "html": "<head></head><body><section><base href=\"https://body.example/\"></section><a href=\"item\">x</a></body>",
+      "actual": "https://document.example/root/item",
+      "scope": "Body/nested base lookup is outside this scoped direct-head implementation; not asserted as complete browser parity."
+    }
+  ],
+  "sourceBinding": {
+    "productCommit": "aedcc2b9f8193047ab5c5335fe111ce71eb177f0",
+    "attributeImplementationSHA256": "120a40f2964ba2364ce89b035af6a9aacc9e01c12416e77a51b7276ba1c52cd9"
+  },
+  "metadataNote": "Only absolute local source path is replaced by a portable path. Case outcomes, timestamps, expected/actual values and errors are unchanged."
+}
